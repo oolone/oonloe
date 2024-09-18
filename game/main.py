@@ -2,7 +2,7 @@ import pygame
 import random
 import os
 import json
-
+#程序部分函数由AI生成，且其他函数经过AI的修改
 # 初始化pygame和音频混音器
 pygame.init()
 pygame.mixer.init()  # 初始化音频模块
@@ -203,7 +203,7 @@ def handle_mouse_down(pos):
             break
 
 
-# 撤销功能
+# 撤销功能（该部分由AI生成）
 def handle_undo():
     global score
     if undo_stack:
@@ -214,7 +214,7 @@ def handle_undo():
         score = max(score - 10, 0)  # 每次撤销分数减少10分，确保分数不为负
 
 
-# 游戏名输入
+# 游戏名输入（该部分由AI生成）
 def get_username():
     global game_name
     game_name = ''
@@ -338,7 +338,7 @@ def display_leaderboard_in_input():
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:  # 按下 ESC 键也可以返回
                     return
-# 显示排行榜
+# 显示排行榜（该部分由AI生成）
 def display_leaderboard(victory):
     leaderboard = []
     if os.path.exists('leaderboard.json'):
